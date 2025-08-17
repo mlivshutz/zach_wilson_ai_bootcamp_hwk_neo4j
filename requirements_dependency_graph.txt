@@ -1,0 +1,32 @@
+# Dependencies for GitHub Repository Dependency Graph Builder
+# Install with: pip install -r requirements_dependency_graph.txt
+
+# Core dependencies
+neo4j>=5.0.0
+pygithub>=2.0.0
+python-dotenv>=0.19.0
+requests>=2.28.0
+
+# LangChain and OpenAI (optional, for future integration)
+langchain-community>=0.0.20
+langchain-openai>=0.0.5
+
+# FastAPI and web server
+fastapi>=0.100.0
+uvicorn[standard]>=0.23.0
+pydantic>=2.0.0
+
+# Development and testing
+pytest>=7.0.0
+pytest-asyncio>=0.21.0  # For async test support
+black>=23.0.0
+flake8>=6.0.0
+
+# Optional: For parsing additional file types
+lxml>=4.9.0  # For XML parsing (Maven pom.xml)
+toml>=0.10.0  # For TOML parsing (Cargo.toml, pyproject.toml)
+
+# Vulnerability Analysis Dependencies
+aiohttp>=3.8.0  # For async HTTP requests to vulnerability databases
+semver>=3.0.0  # For semantic version parsing and comparison
+packaging>=21.0  # For version parsing and comparison
